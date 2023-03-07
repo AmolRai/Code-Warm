@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWarm</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9355/9355360.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <div class="nav-div">
+                <img src="https://cdn-icons-png.flaticon.com/512/9355/9355360.png" alt="">
+                <div class="title">
+                    <p>CodeWarm</p>
+                </div>
+                <img class="pen-img" src="https://cdn-icons-png.flaticon.com/512/1014/1014859.png" alt="">
+            </div>
+            <div>
+                <button class="run-button">Run</button>
+                <button class="clear-button">Clear</button>
+            </div>
+        </nav>
+
+        <div class="btn">
+            <button class="btn-html">HTML</button>
+            <button class="btn-css">CSS</button>
+            <button class="btn-js">JavaScript</button>
+            <button class="btn-result">Result</button>
+        </div>
+
+        <div class="container">
+            <div class="editors editor-one">
+                <div class="html">
+                    <img src="https://img.icons8.com/color/512/html-5.png" />
+                    <h3>HTML</h3>
+                </div>
+
+                <textarea class="html-editor" spellcheck="false"></textarea>
+            </div>
+
+            <div class="editors editor-two">
+                <div class="html">
+                    <img src="https://img.icons8.com/stickers/512/css3.png" />
+                    <h3>CSS</h3>
+                </div>
+                <textarea class="css-editor" spellcheck="false"></textarea>
+            </div>
+
+            <div class="editors editor-three">
+                <div class="html">
+                    <img src="https://img.icons8.com/color/512/javascript.png" />
+                    <h3>JavaScript</h3>
+                </div>
+                <textarea class="js-editor" spellcheck="false"></textarea>
+            </div>
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

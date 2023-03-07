@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+  background-color: white;
+  width: 100%;
+  height: 50%;
+}
+
+.editors {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+  background-color: #1d1e22;
+  color: #a7925a;
+  resize: none;
+  border: none;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+textarea:focus {
+  outline: 0;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  gap: 2vh;
+  height: 50%;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav img {
+  width: 38px;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 15px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #353846;
+  color: white;
+  font-weight: lighter;
+  transition: all 0.1ms;
+}
+
+@media (hover: hover) {
+  button:hover {
+    background-color: #42e9b2;
+    color: black !important;
+  }
+}
+
+h3 {
+  color: white;
+  font-size: 16px;
+  color: hsl(227deg 12% 70%);
+}
+
+.main {
+  height: 100vh;
+}
+
+.html {
+  align-items: center;
+  display: flex;
+  background-color: #1d1e22;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.html img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.nav-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5vh;
+}
+
+.title p {
+  color: white;
+  font-size: 20px;
+}
+
+.pen-img {
+  width: 16px;
+  margin-left: 0;
+  filter: invert(100%);
+}
+
+.btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .editor-two,
+  .editor-three {
+    display: none;
+  }
+  .btn {
+    display: flex;
+    margin-bottom: 1px;
+    margin-top: 10px;
+  }
+
+  .btn-html {
+    margin-left: 15px;
+    margin-right: 1px;
+    border-radius: 0;
+    font-size: 15px;
+    padding: 8px 16px 8px 16px;
+  }
+  .btn-css {
+    margin-right: 1px;
+    border-radius: 0;
+    font-size: 15px;
+    padding: 8px 16px 8px 16px;
+  }
+  .btn-js {
+    border-radius: 0;
+    font-size: 15px;
+    padding: 8px 16px 8px 16px;
+  }
+
+  .btn-result {
+    margin-left: -14px;
+    border-radius: 0;
+    font-size: 15px;
+    padding: 8px 16px 8px 16px;
+  }
+}
